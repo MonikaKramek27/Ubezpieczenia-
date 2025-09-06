@@ -28,7 +28,14 @@
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 20px; /* Dodaje odstęp między kontenerami */
+    }
+
+    .mail-btn-container {
+      display: flex;
+      justify-content: center; /* Wyśrodkowuje przycisk maila */
+      width: 100%;
+      margin-top: 20px;
     }
 
     a {
@@ -63,11 +70,38 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      align-self: flex-start;
     }
 
     .btn-mail:hover {
       background: #e53935;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>NNW szkolne</h1>
+  <div class="button-container">
+    <a href="https://nnwdlaszkoly.pl/oferta/An2rkn" class="btn">Allianz</a>
+    <a href="https://sklep.signal-iduna.pl/?&ag_symbol=17001&RauNbr=11693766/P&product_code=PNL_NNWI_SZKOLNE" class="btn">Signal Iduna*</a>
+    <a href="https://sprzedaz.wiener.pl/ubezpieczone-dziecko/r/90876" class="btn">Wiener</a>
+    <a href="https://nnwszkolne.compensa.pl/ubezpieczenie/nnw-szkolne-indywidualne/kalkulator/" class="btn">Compensa**</a>
+  </div>
+  <div class="mail-btn-container">
+    <a href="mailto:gondzio33@gmail.com?subject=Pytanie%20o%20ubezpieczenie" class="btn-mail">
+      <i class="fa-solid fa-envelope"></i> Wyślij maila
+    </a>
+  </div>
+  <br>
+  <font size="4">
+    *SIGNAL IDUNA: Dla drugiego i kolejnego dziecka ubezpieczonego w ramach jednej polisy zniżka 20%
+    <br>
+    <br>
+    **COMPENSA Wpisz w KOD POŚREDNIKA: 146046 - 10% zniżki
+  </font>
+</body>
+</html>
       transform: scale(1.05);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
